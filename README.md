@@ -12,6 +12,7 @@
     - `dbup-newprovider\dbup-newprovider.csproj`
     - `dbup-newprovider` directory
 1. Run `dotnet build` to ensure it builds
+1. Uncomment the `push` and `pull_request` lines in `.github\workflows\main.yml`
 1. Delete these instructions up to and including the next line, then check in
 
 [![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/DbUp/dbup-newprovider/CI/main)](https://github.com/DbUp/dbup-newprovider/actions/workflows/main.yml?query=branch%3Amain)
