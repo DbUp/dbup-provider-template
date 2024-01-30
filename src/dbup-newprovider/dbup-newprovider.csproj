@@ -3,35 +3,25 @@
   <PropertyGroup>
     <Description>DbUp makes it easy to deploy and upgrade SQL Server databases. This package adds NewProvider support.</Description>
     <Title>DbUp NewProvider Support</Title>
+    <Company>DbUp Contributors</Company>
+    <Product>DbUp</Product>
+    <Copyright>Copyright © DbUp Contributors 2015</Copyright>
     <TargetFrameworks>netstandard1.3;netstandard2.0;net35;net45</TargetFrameworks>
     <AssemblyName>dbup-newprovider</AssemblyName>
     <RootNamespace>DbUp.NewProvider</RootNamespace>
+    <PackageId>dbup-newprovider</PackageId>
     <AssemblyOriginatorKeyFile>../dbup.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <RepositoryUrl>https://github.com/DbUp/dbup-newprovider.git</RepositoryUrl>
-    <Product>dbup_newprovider</Product>
-    <PackageId>dbup-newprovider</PackageId>
     <PackageIcon>dbup-icon.png</PackageIcon>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net35'">
-    <DefineConstants>$(DefineConstants);NPGSQLv2</DefineConstants>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="dbup-core" Version="4.5.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net35'">
-    <PackageReference Include="Npgsql" Version="2.2.7" /> <!-- Last version that supports .NET 3.5 -->
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' != 'net35'">
-    <PackageReference Include="Npgsql" Version="3.2.6" />
+    <PackageReference Include="dbup-core" Version="5.0.37"/>
   </ItemGroup>
 
   <ItemGroup>
-    <None Visible="false" Include="../dbup-icon.png" Pack="True" PackagePath="" />
+    <None Visible="false" Include="../dbup-icon.png" Pack="True" PackagePath=""/>
   </ItemGroup>
 
 </Project>

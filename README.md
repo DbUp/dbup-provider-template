@@ -1,21 +1,22 @@
 # Using this Template
 
 1. Create a new Repository in GitHub based on this template
-    - The name should be `dbup-nameofthenewprovider`
+    - The name should be in the form `dbup-nameofthenewprovider`
     - It should be public
+1. Create PR to add the name of the repo to the `AllProviders.txt` file in the `DbUp` repository
 1. Clone it
 1. Open it in VSCode or other light weight editor that doesn't have strong opinions about solution/project structure (i.e. not Rider/VS)
-1. Search for `NewProvider` and replace with the new provider's name, **turning on the preserve case option**
 1. Rename the following:
     - `dbup-newprovider.sln`
     - `dbup-newprovider.sln.DotSettings`
     - `dbup-newprovider\dbup-newprovider.csproj`
     - `dbup-newprovider` directory
+1. Search for `NewProvider` and replace with the new provider's name, **turning on the preserve case option**
 1. Run `dotnet build` to ensure it builds
 1. Uncomment the `push` and `pull_request` lines in `.github\workflows\main.yml`
 1. Delete these instructions up to and including the next line, then check in
 
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/DbUp/dbup-newprovider/CI/main)](https://github.com/DbUp/dbup-newprovider/actions/workflows/main.yml?query=branch%3Amain)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/DbUp/dbup-newprovider/main.yml?branch=main)](https://github.com/DbUp/dbup-newprovider/actions/workflows/main.yml?query=branch%3Amain)
 [![NuGet](https://img.shields.io/nuget/dt/dbup-newprovider.svg)](https://www.nuget.org/packages/dbup-newprovider)
 [![NuGet](https://img.shields.io/nuget/v/dbup-newprovider.svg)](https://www.nuget.org/packages/dbup-newprovider)
 [![Prerelease](https://img.shields.io/nuget/vpre/dbup-newprovider?color=orange&label=prerelease)](https://www.nuget.org/packages/dbup-newprovider)
