@@ -3,7 +3,7 @@
 1. Create a new Repository in GitHub based on this template
     - The name should be in the form `dbup-nameofthenewprovider`
     - It should be public
-1. Create PR to add the name of the repo to the `AllProviders.txt` file in the `DbUp` repository
+1. Create PR to add the name of the repo to the `AllProviders.txt` file in the `Universe` repository
 1. Clone it
 1. Open it in VSCode or other light weight editor that doesn't have strong opinions about solution/project structure (i.e. not Rider/VS)
 1. Rename the following:
